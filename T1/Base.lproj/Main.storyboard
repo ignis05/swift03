@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-91" y="-538"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="b7p-CW-VtA">
             <objects>
-                <viewController id="7aj-YA-b7S" sceneMemberID="viewController">
+                <viewController id="7aj-YA-b7S" customClass="ViewController2" customModule="T1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYC-Yi-A21">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,11 +82,17 @@
                                 <rect key="frame" x="264" y="586" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="7aj-YA-b7S" eventType="touchUpInside" id="EEC-0v-zZJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9hH-Q1-gwe"/>
                     </view>
+                    <connections>
+                        <outlet property="txt" destination="9Zp-Ca-cXG" id="2AF-nj-ABo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PR-y3-Yga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
